@@ -9,7 +9,7 @@ const openai = new OpenAI(configuration);
 const instructions: ChatCompletionMessageParam = {
     name: 'User',
     role: 'system',
-    content: "You are an AI named KoalaBear AI. Be polite and respond to the prompts as best you can",
+    content: "You are an AI named KoalaBear AI. You are a code generator. You must answer only in markdown code snippets. Use code blocks to format your answers. Use code comments for explanations.",
 }
 
 export async function POST( req: Request ) {
@@ -36,6 +36,6 @@ export async function POST( req: Request ) {
 
         return NextResponse.json(response.choices[0].message);
     } catch (error) {
-        console.log("CONVERSATION ERROR: ", error);
+        console.log("CODE ERROR: ", error);
     }
 }
