@@ -38,7 +38,6 @@ const ConversationPage = () => {
     });
 
     useEffect(() => {
-        console.log("the error", error);
         let timer: any = undefined;
         if(error !== null && timer === undefined){
             timer = setTimeout(() => {

@@ -39,7 +39,6 @@ const CodePage = () => {
     });
 
     useEffect(() => {
-        console.log("the error", error);
         let timer: any = undefined;
         if(error !== null && timer === undefined){
             timer = setTimeout(() => {
