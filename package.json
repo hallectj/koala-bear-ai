@@ -22,6 +22,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.307.0",
+    "monsterapi": "^0.0.3",
     "next": "14.0.4",
     "openai": "^4.24.1",
     "react": "^18",
